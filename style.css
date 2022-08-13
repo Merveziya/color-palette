@@ -1,0 +1,128 @@
+html {
+  font-family: Baloo;
+}
+
+body {
+  padding: 0px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+#color-container {
+  margin: 10px;
+  text-align: center;
+  color: #80d87f;
+}
+
+#color-container span {
+  margin: 10px;
+  font-size: 60px;
+}
+
+#unshift-btn {
+  background-color: #80d87f;
+}
+
+#shift-btn,
+#pop-btn {
+  background-color: blueviolet;
+}
+
+h1 {
+  letter-spacing: 3px;
+  text-align: center;
+  color: rgb(242, 224, 240);
+  margin-top: 100px;
+  text-shadow: 3px 1px rgb(102, 12, 187);
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+input {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  height: 30px;
+  background: white;
+  border-radius: 6px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+button {
+  font-family: Baloo;
+  letter-spacing: px;
+  background: darkcyan;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin: 0 4px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 40px;
+}
+
+#color_btn {
+  background-color: #80d87f;
+  display: block;
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  display: flex;
+  justify-content: center;
+}
+input {
+  background-color: beige;
+  border: 3px solid black;
+}
+.color_name {
+  text-align: center;
+  margin-bottom: 10px;
+  border: 5px solid black;
+}
+#green {
+  color: rgb(8, 94, 8);
+}
+#blue {
+  color: rgb(95, 95, 245);
+}
+#red {
+  color: rgb(233, 52, 52);
+}
+#yellow {
+  color: rgb(237, 237, 18);
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 90%;
+    text-align: center;
+    background-color: beige;
+    padding-left: 10px;
+  }
+  #color_btn {
+    display: block;
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input {
+    background-color: white;
+    border: 3px solid black;
+    text-transform: lowercase;
+  }
+  h1 {
+    margin-top: 0px;
+  }
+  .buttons-wrapper {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+  }
+}
