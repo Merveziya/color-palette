@@ -2,7 +2,7 @@
 
 
 When we mix any two colors given in the box below, the background color changes to the resulting color.
-IMPORTANT : Please write all in lowercase !!
+
 
 
 <h3>More Information</h3>
