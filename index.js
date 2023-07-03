@@ -44,45 +44,48 @@ function changeColor(color) {
 }
 
 function gfg_Run() {
+  var color1 = myColors[0].toLowerCase();
+  var color2 = myColors[1].toLowerCase();
+
   if (
-    (myColors[1] == "red" && myColors[0] == "blue") ||
-    (myColors[0] == "red" && myColors[1] == "blue")
+    (color1 === "red" && color2 === "blue") ||
+    (color1 === "blue" && color2 === "red")
   ) {
     changeColor("magenta");
   } else if (
-    (myColors[1] == "yellow" && myColors[0] == "red") ||
-    (myColors[0] == "yellow" && myColors[1] == "red")
+    (color1 === "yellow" && color2 === "red") ||
+    (color1 === "red" && color2 === "yellow")
   ) {
     changeColor("orange");
   } else if (
-    (myColors[1] == "yellow" && myColors[0] == "blue") ||
-    (myColors[0] == "yellow" && myColors[1] == "blue") ||
-    (myColors[0] == "green" && myColors[1] == "green")
+    (color1 === "yellow" && color2 === "blue") ||
+    (color1 === "blue" && color2 === "yellow") ||
+    (color1 === "green" && color2 === "green")
   ) {
     changeColor("green");
   } else if (
-    (myColors[1] == "red" && myColors[0] == "green") ||
-    (myColors[0] == "red" && myColors[1] == "green")
+    (color1 === "red" && color2 === "green") ||
+    (color1 === "green" && color2 === "red")
   ) {
     changeColor("#654321");
   } else if (
-    (myColors[1] == "blue" && myColors[0] == "green") ||
-    (myColors[0] == "blue" && myColors[1] == "green")
+    (color1 === "blue" && color2 === "green") ||
+    (color1 === "green" && color2 === "blue")
   ) {
     changeColor("cyan");
   } else if (
-    (myColors[1] == "yellow" && myColors[0] == "green") ||
-    (myColors[0] == "yellow" && myColors[1] == "green")
+    (color1 === "yellow" && color2 === "green") ||
+    (color1 === "green" && color2 === "yellow")
   ) {
     changeColor("#90ee90");
-  } else if (myColors[1] == "red" && myColors[0] == "red") {
+  } else if (color1 === "red" && color2 === "red") {
     changeColor("red");
-  } else if (myColors[1] == "blue" && myColors[0] == "blue") {
+  } else if (color1 === "blue" && color2 === "blue") {
     changeColor("blue");
-  } else if (myColors[1] == "yellow" && myColors[0] == "yellow") {
+  } else if (color1 === "yellow" && color2 === "yellow") {
     changeColor("yellow");
   } else {
     changeColor("black");
-    el_down.innerHTML = "You entered wrong color pair. TRY AGAIN!!!";
+    el_down.innerHTML = "You entered the wrong color pair. TRY AGAIN!!!";
   }
 }
